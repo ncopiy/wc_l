@@ -2,7 +2,17 @@
 #include <iostream>
 #include <fstream>
 #include <cstring>
-#include <QDebug>
+
+Terminal::Terminal()
+{
+
+}
+
+void Terminal::start()
+{
+    work = true;
+    run();
+}
 
 void Terminal::run() {
     state current;

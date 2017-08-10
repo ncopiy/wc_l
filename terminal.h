@@ -5,16 +5,14 @@
 class Terminal
 {
 public:
-    Terminal() {
-        work = true;
-        run();
-    }
+    Terminal();
 
     enum state{ERROR = 0, CORRECT, HELP, EXIT};
 
-    void run();
+    void start();
 
 private:
+    void run();
     std::string inputStr;
     bool work;
 

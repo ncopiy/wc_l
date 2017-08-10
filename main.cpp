@@ -4,5 +4,7 @@
 int main()
 {
     Terminal terminal;
+    terminal.start();
+
     return 0;
 }
